@@ -10,7 +10,7 @@ rental_id	customer_name	activity	    rental_date
 3	        Emily	        Snowboarding	  2024-01-03
 4	        Sarah	        Skiing	          2024-01-01
 5	        Michael	        Skiing	          2024-01-02
-6	        Michael	        Snowtubing	   2024-01-02
+6	        Michael	        Snowtubing	  2024-01-02
 
 
 ANSWER:
@@ -19,3 +19,10 @@ SELECT customer_name, COUNT(DISTINCT activity) AS distinct_activity_count
 FROM rentals
 GROUP BY customer_name
 HAVING COUNT(DISTINCT activity) > 1;
+
+QUERY RESULTS:
+
+customer_name	distinct_activity_count
+Emily	2
+Michael	3
+Correct!! 🎉 Great work!
