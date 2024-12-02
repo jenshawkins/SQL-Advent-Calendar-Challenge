@@ -4,13 +4,13 @@ A ski resort company want to know which customers rented ski equipment for more 
 
 Table name: rentals
 
-rental_id	customer_name	activity	rental_date
-1	Emily	Skiing	2024-01-01
-2	Michael	Snowboarding	2024-01-02
-3	Emily	Snowboarding	2024-01-03
-4	Sarah	Skiing	2024-01-01
-5	Michael	Skiing	2024-01-02
-6	Michael	Snowtubing	2024-01-02
+rental_id	customer_name	activity	    rental_date
+1	        Emily	        Skiing	      2024-01-01
+2	        Michael	      Snowboarding	2024-01-02
+3	        Emily	        Snowboarding	2024-01-03
+4	        Sarah	        Skiing	      2024-01-01
+5	        Michael	      Skiing	      2024-01-02
+6	        Michael	      Snowtubing	  2024-01-02
 
 
 ANSWER:
