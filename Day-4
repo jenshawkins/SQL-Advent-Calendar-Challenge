@@ -5,7 +5,7 @@ You’re planning your next ski vacation and want to find the best regions with 
 Table name: ski_resorts
 
 resort_id	resort_name	      region
-1	        Snowy Peaks	      Rocky Mountains
+1	        Snowy Peaks	          Rocky Mountains
 2	        Winter Wonderland        Wasatch Range
 3	        Frozen Slopes	       Alaska Range
 4	        Powder Paradise	       Rocky Mountains
@@ -40,7 +40,7 @@ ORDER BY
 Query Results:
 
 region	      average_snowfall
-Alaska Range	  75
+Alaska Range	      75
 Rocky Mountains	    57.5
 Wasatch Range      	45
 Correct!! 🎉 Great work!
