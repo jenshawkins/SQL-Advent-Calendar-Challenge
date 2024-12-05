@@ -6,17 +6,17 @@ Table name: ski_resorts
 
 resort_id	resort_name	      region
 1	        Snowy Peaks	      Rocky Mountains
-2	        Winter Wonderland    Wasatch Range
+2	        Winter Wonderland        Wasatch Range
 3	        Frozen Slopes	       Alaska Range
 4	        Powder Paradise	       Rocky Mountains
 
 Table name: snowfall
 
 resort_id	snowfall_inches
-1	60
-2	45
-3	75
-4	55
+1	        60
+2	        45
+3	        75
+4	        55
 Question level of difficulty:
 Medium
 
@@ -41,8 +41,8 @@ Query Results:
 
 region	      average_snowfall
 Alaska Range	  75
-Rocky Mountains	57.5
-Wasatch Range  	45
+Rocky Mountains	    57.5
+Wasatch Range      	45
 Correct!! 🎉 Great work!
 
 
