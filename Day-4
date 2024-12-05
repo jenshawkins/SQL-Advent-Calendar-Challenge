@@ -6,7 +6,7 @@ Table name: ski_resorts
 
 resort_id	resort_name	      region
 1	        Snowy Peaks	      Rocky Mountains
-2	        Winter WonderlandWasatch Range
+2	        Winter Wonderland    Wasatch Range
 3	        Frozen Slopes	       Alaska Range
 4	        Powder Paradise	       Rocky Mountains
 
