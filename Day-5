@@ -4,11 +4,11 @@ This year, we're celebrating Christmas in the Southern Hemisphere! Which beaches
 
 Table name: beach_temperature_predictions
 
-beach_name				country				expected_temperature_c	date
-Bondi Beach				Australia			32											2024-12-24
-Copacabana Beach	Brazil				28											2024-12-24
-Clifton Beach			South Africa	31											2024-12-25
-Brighton Beach		New Zealand		25											2024-12-25
+beach_name		country				expected_temperature_c	date
+Bondi Beach		Australia			32			2024-12-24
+Copacabana Beach	Brazil				28			2024-12-24
+Clifton Beach		South Africa	                31			2024-12-25
+Brighton Beach		New Zealand		        25			2024-12-25
 
 Question level of difficulty:
 Easy
@@ -27,6 +27,6 @@ WHERE
 
 Results:
 beach_name		country
-Clifton Beach	South Africa
+Clifton Beach	        South Africa
 Correct!! 🎉 Great work!
 
