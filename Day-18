@@ -1,0 +1,68 @@
+Today's Question:
+
+A travel agency is promoting activities for a "Summer Christmas" party. They want to identify the top 2 activities based on the average rating. Write a query to rank the activities by average rating.
+
+Table name: activities
+
+activity_id	activity_name
+1		Surfing Lessons
+2		Jet Skiing
+3		Sunset Yoga
+Table name: activity_ratings
+
+rating_id	activity_id	rating
+1		1		4.7
+2		1		4.8
+3		1		4.9
+4		2		4.6
+5		2		4.7
+6		2		4.8
+7		2		4.9
+8		3		4.8
+9		3		4.7
+10		3		4.9
+11		3		4.8
+12		3		4.9
+Question level of difficulty:
+Hard
+
+ANSWER:
+
+WITH activity_avg_ratings AS (
+    SELECT 
+        a.activity_id,
+        a.activity_name,
+        ROUND(AVG(ar.rating), 2) AS average_rating
+    FROM 
+        activities a
+    JOIN 
+        activity_ratings ar
+    ON 
+        a.activity_id = ar.activity_id
+    GROUP BY 
+        a.activity_id, a.activity_name
+),
+ranked_activities AS (
+    SELECT 
+        activity_id,
+        activity_name,
+        average_rating,
+        RANK() OVER (ORDER BY average_rating DESC) AS rank
+    FROM 
+        activity_avg_ratings
+)
+SELECT 
+    activity_id,
+    activity_name,
+    average_rating
+FROM 
+    ranked_activities
+WHERE 
+    rank <= 2;
+
+QUERY RESULT:
+
+activity_id	activity_name	average_rating
+3		Sunset Yoga	4.82
+1		Surfing Lessons	4.8
+Correct!! 🎉 Great work!
